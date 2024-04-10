@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OCR Parser</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+<h1>OCR PDFs and images directly in your browser</h1>
+<p>This tool runs entirely in your browser. No files are uploaded to a server.</p>
+<input type="file" id="fileInput" accept=".pdf,.jpg,.jpeg,.png,.gif" style="display: none;" />
+<div class="dropzone" id="dropzone">
+  Drag and drop a PDF, JPG, PNG, or GIF file here or click to select a file
+</div>
+<div class="full-document-section" id="fullDocumentSection">
+  <h2>Full document</h2>
+  <label for="fullDocument"></label><textarea class="full-document" id="fullDocument"></textarea>
+  <h2>Pages</h2>
+</div>
+<div class="image-container"></div>
+<script type="module" src="/main.js"></script>
+</body>
+</html>
